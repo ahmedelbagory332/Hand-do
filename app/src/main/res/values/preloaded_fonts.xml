@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/</item>
+        <item>@font/amiri</item>
+        <item>@font/el_messiri</item>
+        <item>@font/esteban</item>
+        <item>@font/finger_paint</item>
+        <item>@font/permanent_marker</item>
+
+    </array>
+</resources>

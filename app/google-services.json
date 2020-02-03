@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "326656676663",
+    "firebase_url": "https://sal7ni-d13d5.firebaseio.com",
+    "project_id": "sal7ni-d13d5",
+    "storage_bucket": "sal7ni-d13d5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:326656676663:android:966150c78cb46be9",
+        "android_client_info": {
+          "package_name": "cairo.fci.elbagory.fixme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "326656676663-omdfjoee97hb5envvkp5bhvunkirpc51.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhjxHHPVNqA1kLBs5PxYDFc0AfsodijLo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "326656676663-omdfjoee97hb5envvkp5bhvunkirpc51.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

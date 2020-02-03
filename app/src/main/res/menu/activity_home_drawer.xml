@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/choose"
+            android:icon="@drawable/choose"
+            android:title="اختر التخصص"
+            android:fontFamily="@font/amiri"
+            />
+        <item
+            android:id="@+id/location"
+            android:icon="@drawable/location"
+            android:title="تحديد موقعك" />
+        <item
+            android:id="@+id/subscribe"
+            android:icon="@drawable/subscribe"
+            android:title="اشترك الان" />
+        <item
+            android:id="@+id/share"
+            android:icon="@drawable/ic_share"
+            android:title="شارك التطبيق" />
+        <item
+            android:id="@+id/rate"
+            android:icon="@drawable/rate"
+            android:title="قيم التطبيق" />
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/ic_settings"
+            android:title="الاعدادات" />
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/logout"
+            android:title="تسجيل الخروج" />
+    </group>
+
+
+
+</menu>

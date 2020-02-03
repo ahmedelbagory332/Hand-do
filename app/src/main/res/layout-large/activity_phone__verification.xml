@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorwhite"
+    tools:context=".UserLogin_SignUp.Phone_Verification">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/_login"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="صلحنى سوف يرسل لك كود للتأكد من رقم الهاتف من فضلك أدخل رقم هاتفك. وإن كنت مُسجل من قبل اضغط هنا"
+                        android:textAlignment="center"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/user_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="150dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <EditText
+                        android:id="@+id/phonenum"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_border_edittext"
+                        android:ems="10"
+                        android:focusable="auto"
+                        android:gravity="center"
+                        android:hint="ادخل رقم هاتفك"
+                        android:inputType="number"
+                        android:paddingBottom="15dp"
+                        android:paddingLeft="2dp"
+                        android:paddingRight="2dp"
+                        android:paddingTop="15dp" />
+
+                    <TextView
+                        android:id="@+id/error"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="30dp"
+                        android:gravity="right"
+                        android:padding="3dp"
+                        android:text="الرقم مُسجل من قبل"
+                        android:textColor="@color/red"
+                        android:textSize="20sp"
+                        android:visibility="invisible" />
+
+                    <EditText
+                        android:id="@+id/code"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_border_edittext"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:hint="ادخل كود التأكيد"
+                        android:inputType="number"
+                        android:paddingBottom="15dp"
+                        android:paddingLeft="2dp"
+                        android:paddingRight="2dp"
+                        android:paddingTop="15dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="200dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:gravity="bottom|center"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/_code"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:background="@drawable/dialog_round"
+                            android:onClick="sendcode"
+                            android:text="إرسال رمز التأكيد"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="24sp"
+                            tools:ignore="OnClick" />
+
+                        <Button
+                            android:id="@+id/_sign"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:background="@drawable/dialog_round"
+                            android:onClick="signup"
+                            android:text="تسجيل"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="20sp"
+                            android:visibility="gone"
+                            tools:ignore="OnClick" />
+
+                        <Button
+                            android:id="@+id/resendcode"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:background="@drawable/dialog_round"
+                            android:text="إعادة ارسال كود جديد"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="20sp"
+                            android:visibility="gone"
+                            tools:ignore="OnClick" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</RelativeLayout>
